@@ -9,6 +9,16 @@ public class ApplicationController {
 	
 	@RequestMapping(method = RequestMethod.GET, path = "/")
 	public String home() {
-		return "Root Page";
+		return "<h1>Root Page<h1>";
+	}
+	
+	@RequestMapping(method = RequestMethod.GET, path = "/admin")
+	public String admin() {
+		return "welcome admin";
+	}
+	
+	@RequestMapping(method = RequestMethod.GET, path = "/user")
+	public String user() {
+		return "<h1>welcome user<h1>";
 	}
 }
